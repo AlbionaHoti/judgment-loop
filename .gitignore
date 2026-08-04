@@ -1,0 +1,7 @@
+# your personal artifacts never ship
+data/decisions-train.jsonl
+data/mined-corrections*.json
+eval/blind_pairs.csv
+eval/answers-key.json
+*.gguf
+__pycache__/

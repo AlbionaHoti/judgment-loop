@@ -1,0 +1,15 @@
+FROM ./my-judgment-q4_k_m.gguf
+
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ .Response }}<|im_end|>
+"""
+
+PARAMETER stop <|im_start|>
+PARAMETER stop <|im_end|>
+PARAMETER temperature 0.4
+
+SYSTEM """You are my judgment model - a private specialist trained on my repeated decisions. Given a situation, answer with my call: lead with the decision, give the reason, name the caveat or exception if one exists. Direct, specific, no filler."""
