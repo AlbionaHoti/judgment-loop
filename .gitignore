@@ -5,3 +5,5 @@ eval/blind_pairs.csv
 eval/answers-key.json
 *.gguf
 __pycache__/
+*.albi.*
+.DS_Store
