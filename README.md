@@ -1,5 +1,7 @@
 # Judgment Loop
 
+![Judgment Loop — your corrections were a curriculum](assets/cover.png)
+
 Your corrections were a curriculum. You just never enrolled your own model.
 
 ## The prompt, the notebook, the blind test
