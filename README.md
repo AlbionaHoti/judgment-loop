@@ -48,6 +48,7 @@ generic model? A loss is a valid result. Publish it either way.
    `eval/hidden-tests.jsonl`, then:
 
    ```
+   ollama pull qwen2.5:3b-instruct   # the comparison base model (one-time)
    python3 eval/blind_ab.py run      # queries both models, shuffles A/B
    # judge answers blind in blind_pairs.csv (fill winner + scores)
    python3 eval/blind_ab.py reveal   # unmasks, prints sheet-ready rows
@@ -72,7 +73,8 @@ generic model? A loss is a valid result. Publish it either way.
 
 - Any AI assistant that can search your history (for the extraction prompt)
 - A Google account (Colab, free tier is enough for a 3B model)
-- [Ollama](https://ollama.com) on your machine
+- [Ollama](https://ollama.com) on your machine, with the base model pulled
+  for the blind test: `ollama pull qwen2.5:3b-instruct`
 - Python 3 (standard library only)
 
 ## Roadmap through the repo
