@@ -1,9 +1,14 @@
 # your personal artifacts never ship
+data/decisions.jsonl
+data/examples.jsonl
 data/decisions-train.jsonl
+data/dataset-manifest.json
 data/mined-corrections*.json
 eval/blind_pairs.csv
 eval/answers-key.json
 *.gguf
+my-judgment-lora*
+train-manifest.json
 __pycache__/
 *.albi.*
 .DS_Store

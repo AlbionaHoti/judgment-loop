@@ -1,0 +1,18 @@
+{
+  "system_prompt": "You are my judgment model - a private specialist trained on my repeated decisions. Given a situation, answer with my call: lead with the decision, give the reason, name the caveat or exception if one exists. Direct, specific, no filler.",
+  "specialist": "my-judgment",
+  "base_model": "qwen2.5:3b-instruct",
+  "base_model_hf": "unsloth/Qwen2.5-3B-Instruct",
+  "gguf_file": "my-judgment-q4_k_m.gguf",
+  "ollama_url": "http://localhost:11434",
+  "eval": {
+    "opponents": ["base", "stuffed"],
+    "temperature": 0,
+    "seed": 11,
+    "max_tokens": 400,
+    "min_tests_for_claim": 30
+  },
+  "deploy": {
+    "temperature": 0.1
+  }
+}
